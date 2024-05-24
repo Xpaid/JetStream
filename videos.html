@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JetStream</title>
+    <link rel="icon" href="assets/icons.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <style>
+      #current {
+        color: #ffffff;
+      }
+
+      #video-background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.3;
+        z-index: -1;
+      }
+
+      #video-background video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .video {
+        width: 1000px;
+        height: 563px;
+        background-color: #000;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        color: #fff;
+        margin-bottom: 50px;
+        margin-top: 50px;
+        padding: auto;
+      }
+
+      .video h2 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: left;
+      }
+
+      .video iframe {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    </style>
+    <header>
+      <a href="" id="logo"
+        ><span id="jet">Jet</span><span id="stream">Stream</span></a
+      >
+      <nav>
+        <a href="index.html" class="menu">Home</a>
+        <a href="videos.html" class="menu" id="current">Videos</a>
+        <a href="about.html" class="menu">About</a>
+      </nav>
+    </header>
+    <main>
+      <div id="video-background">
+        <video autoplay loop muted>
+          <source src="assets/backgroundvideo2.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="container">
+        <div class="video" id="video1">
+          <iframe
+            src="https://archive.org/embed/the-kid-laroi-justin-bieber-stay-official-video-720-p-hd"
+            width="1000px"
+            height="700px"
+            frameborder="0"
+            webkitallowfullscreen="true"
+            mozallowfullscreen="true"
+            allowfullscreen
+            poster="assets/staythumbnail.jpg"
+          ></iframe>
+          <h2>Stay - The Kid LAROI, Justin Bieber</h2>
+        </div>
+        <div class="video" id="video2">
+          <iframe
+            src="https://archive.org/embed/post-malone-swae-lee-sunflower-spider-man-into-the-spider-verse"
+            width="1000px"
+            height="700px"
+            frameborder="0"
+            webkitallowfullscreen="true"
+            mozallowfullscreen="true"
+            allowfullscreen
+            poster="assets/sunflowerthumbnail.jpg"
+          ></iframe>
+          <h2>Sunflower - Post Malone, Swae Lee</h2>
+        </div>
+        <div class="video" id="video3">
+          <iframe
+            src="https://archive.org/embed/weeknd-save-your-tears-mv-prores-4K"
+            width="1000px"
+            height="700px"
+            frameborder="0"
+            webkitallowfullscreen="true"
+            mozallowfullscreen="true"
+            allowfullscreen
+            poster="assets/saveyourtearsthumbnail.jpg"
+          ></iframe>
+          <h2>Save your Tears - The Weeknd</h2>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <a href="https://github.com/Xpaid" target="_blank">
+        <img src="assets/github.png" alt="github" id="github" />
+      </a>
+      <h5>Github</h5>
+      <br />
+      <p>&copy; 2024 JetStream. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

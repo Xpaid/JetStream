@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>JetStream</title>
+        <link rel="icon" href="assets/icon.png" type="image/x-icon">
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <style>
+            #current {
+                color: #FFFFFF;
+            }
+
+            #openingPhrase {
+                position: absolute;
+                top: 400px;
+                left: 200px;
+                width: fit-content;
+                color: #BBBBBB;
+                font-size: 25px;
+                font-weight: 700;
+                line-height: 2;
+                margin-right:150px ;
+            }
+
+            #video-background {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                opacity: .3;
+                z-index: -1;
+            }
+
+            #video-background video {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        </style>
+        <header>
+            <a href="" id="logo"><span id="jet">Jet</span><span id="stream">Stream</span><a>
+                    <nav>
+                        <a href="index.html" class="menu">Home</a>
+                        <a href="videos.html" class="menu">Videos</a>
+                        <a href="about.html" class="menu" id="current">About</a>
+                    </nav>
+        </header>
+        <main>
+            <div id="video-background">
+                <video autoplay loop muted>
+                    <source src="assets/backgroundvideo3.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div id="openingPhrase">Welcome to JetStream, your hub for music video streaming! Immerse yourself in an unrivaled experience that combines the power of music with captivating visuals. Discover a vast collection of music videos spanning genres, eras, and cultures. Join our passionate community of music lovers and elevate your music experience. Let the music flow, the visuals ignite, and the beat resonate. Welcome to JetStream, where music videos come alive.</div>
+        </main>
+    </body>
+    <footer>
+        <a href="https://github.com/Xpaid" target="_blank">
+            <img src="assets/github.png" alt="github" id="github">
+        </a>
+        <h5>Github</h5>
+        <br>
+        <p>&copy; 2024 JetStream. All rights reserved.</p>
+    </footer>
+
+</html>
